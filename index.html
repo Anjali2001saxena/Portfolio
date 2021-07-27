@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> HOME </title>
+    <link rel="icon" href="../imagefiles/logo.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../cssfiles/mainpage.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../jsfiles/mainpage.js"></script>
+
+    
+</head>
+<body>
+  <div class="grid">
+    <div id="loader1" ></div>
+    <div id="loader2" ></div>
+    <div id="loader3" ></div>
+    <div id="loader4" ></div>
+  </div>  
+    <script> 
+        document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector( 
+                  "body").style.visibility = "hidden"; 
+                document.querySelector( 
+                  "#loader1").style.visibility = "visible";
+                  document.querySelector( 
+                  "#loader2").style.visibility = "visible";
+                  document.querySelector( 
+                  "#loader3").style.visibility = "visible";
+                  document.querySelector( 
+                  "#loader4").style.visibility = "visible";   
+            } else { 
+                document.querySelector( 
+                  "#loader1").style.display = "none"; 
+                  document.querySelector( 
+                  "#loader2").style.display = "none"; 
+                  document.querySelector( 
+                  "#loader3").style.display = "none"; 
+                  document.querySelector( 
+                  "#loader4").style.display = "none";   
+                document.querySelector( 
+                  "body").style.visibility = "visible"; 
+            } 
+        }; 
+    </script> 
+
+
+
+    <nav class="navbar navbar-expand-md bg-company-black navbar-dark ">
+
+      <a class="navbar-brand" href="#">
+      <img src="imagefiles/logo.png" alt="Logo" style="margin: 0px 40px; width: 60px;">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+        <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/htmlfiles/ABOUT.html">ABOUT</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/htmlfiles/projects.html">PROJECTS</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="/htmlfiles/contact.html">CONTACT</a>
+        </li>    
+      </ul>
+      </div>
+
+    </nav>
+
+
+
+    <div class="flex-container">
+
+      <div class="flex-section">
+        <h4> Hi, I am </h4>
+        <h1> ANJALI SAXENA </h1>
+        <br>
+        <h2>
+          <span
+           class="txt-rotate"
+           data-period="2000"
+           data-rotate='[ "Full-stack Web Developer.", "C++ Programmer.", "Machine learning enthusiast." ]'>
+          </span>
+        </h2>
+      </div>
+
+      <img src="imagefiles/mainpage_pic.png" class="picture">
+
+    </div>     
+
+
+
+    <footer class="footer">
+        <p>&copy;2020 Anjali Saxena<p>
+    </footer>
+       
+</body>    
+</html>

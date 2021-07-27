@@ -1,0 +1,240 @@
+
+html
+{
+  min-width: 100%;
+  min-height: 100%;
+}
+body
+{
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+::-webkit-scrollbar {
+  width: 1vh;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(250, 249, 249); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 0, 106); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+.bg-company-black 
+{
+  background-color: black !important;
+}
+.nav-item
+{
+  padding: 0px 20px;
+}
+.active a
+{
+  color: rgb(255, 0, 106) !important;
+}
+.nav-link:hover
+{
+  color: rgb(255, 0, 106) !important;
+}
+.navbar-collapse.in {
+  display: block !important;
+}
+
+.flex-container
+{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+   
+} 
+.flex-section
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+} 
+.flex-section1
+{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}  
+
+.heading
+{  
+  font-size: 60px;
+  font-weight:bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  color: rgb(255, 0, 106);
+  animation: fadein 5s linear 0s;
+} 
+
+.main
+{
+  position: relative;
+  padding: 1% 5%;
+  right: 30%;
+  box-shadow: 0 0 8px white;
+}
+
+
+.form
+{
+  width: 100%;
+  color: azure;
+  justify-content: center;
+}   
+input
+{
+  width: 100%;
+}
+.Submit
+{
+  width: 30%;
+  height: 10%;
+  margin: 2% 35%;
+  border-radius: 12px;
+  background-color: rgb(216, 2, 91); 
+  color: white;
+  border-color: rgb(216, 2, 91);
+}
+
+
+.fa
+{
+  padding-top:2vh;
+  padding-bottom: 2vh;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  margin-bottom: 1vh;
+  font-size: xx-large;
+  text-align: start;
+  animation: fadeInLeft 3s linear 0s;
+} 
+.fa:hover
+{
+  opacity: 0.7;
+} 
+.fa-google
+{
+  background-color: red;
+  color: azure;
+}             
+.fa-linkedin
+{
+  background-color: rgb(15, 74, 236);
+  color: azure;
+}
+.fa-twitter
+{
+  background-color: rgb(6, 139, 216);
+  color: azure;
+}
+.fa-instagram
+{
+  background-image: linear-gradient(rgb(212, 13, 238), rgb(245, 183, 12));
+  color: azure;
+}   
+.fa-facebook
+{
+  background-color: rgb(2, 22, 107);
+  color: azure;
+} 
+
+
+#text
+{
+  color: azure;
+  text-align: center;
+  font-size: x-large;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}   
+
+.footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@media only screen and (max-width: 1100px)
+{
+  .main
+  {
+    right: 10%;
+  }
+}
+
+
+@media only screen and (max-width: 600px)
+{
+   .main
+   {
+     position: unset;
+     margin: 5%;
+     width: 90%;
+   }
+   .heading
+   {
+     font-size: 30px;
+   }
+
+   .nav-link
+   {
+     font-size: small;
+   }
+
+   .flex-container
+   {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+   .flex-section1
+   {
+     display: flex;
+     flex-direction: row;
+     justify-content:center;
+   } 
+
+   .fa
+   {
+     margin: 1%;
+     border-radius: 50%;
+     font-size: large;
+   }
+
+
+}   
+
+
+
+@media only screen and (max-width: 350px)
+{
+  .nav-item
+  {
+    margin: 0;
+  }
+   .nav-link
+   {
+     font-size: x-small;
+   }
+
+}   
